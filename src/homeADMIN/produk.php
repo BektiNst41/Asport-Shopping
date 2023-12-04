@@ -236,6 +236,20 @@ $admin_name = $_SESSION['admin_name'];
         </div>
     <?php }; ?>
 </div>
+        
+        <script>
+        function formatHargaProduk(input) {
+            let HargaProduk = input.value.replace(/\D/g, ''); // Menghapus semua kecuali digit
+            HargaProduk = formatRupiah(HargaProduk); // Memformat nilai menjadi format Rupiah
+            input.value = HargaProduk;
+            input.setAttribute('data-value', HargaProduk.replace(/[^0-9]/g, '')); // Menyimpan nilai tanpa tanda baca
+        }
+
+        function formatRupiah(angka) {
+            let formatted = angka.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+            return 'Rp. ' + formatted;
+        }
+        </script>
         <script>
         const modal = document.querySelector('.modal');
 

@@ -185,7 +185,7 @@ if ($result && mysqli_num_rows($result) > 0) {
     </div>
 
     <!--MEN SHOES-->
-    <a href="src/homeUSER/men.php"><img src="image/Iklan/Men.png"></a>
+    <a href="src/homeUSER/men.php"><img src="image/Iklan/Men (1).png"></a>
     </center>
     <p class="font-semibold text-4xl ml-16 mb-14 mt-14">MOST POPULER | MEN SHOES</p>
     <center>
@@ -240,7 +240,7 @@ if ($result && mysqli_num_rows($result) > 0) {
         <a href="src/homeUSER/men.php"><button class="border-spacing-2 mt-10 mb-40 bg-black hover:scale-105 hover:bg-gray-600 px-5 py-3 rounded-md text-sm font-semibold text-white transition-all duration-150 ease-in-out">See More</button></a>
     </center>
 
-    <a href="src/homeUSER/women.php"><img src="image/Iklan/Women.png"></a>
+    <a href="src/homeUSER/women.php"><img src="image/Iklan/Women (1).png"></a>
     <p class="font-semibold text-4xl ml-16 mb-14 mt-14">MOST POPULER | WOMEN SHOES</p>
     <center>
     <div class="flex flex-wrap justify-center mt-6 gap-6 mb-7">
@@ -289,7 +289,7 @@ if ($result && mysqli_num_rows($result) > 0) {
     </center>
 
 
-    <a href="src/homeUSER/kids.php"><img src="image/Iklan/Kids.png"></a>
+    <a href="src/homeUSER/kids.php"><img src="image/Iklan/Kids (1).png"></a>
     <p class="font-semibold text-4xl ml-16 mt-14">MOST POPULER | KIDS SHOES</p>
     <center>
     <div class="flex flex-wrap justify-center mt-6 gap-6 mb-7">

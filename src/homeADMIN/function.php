@@ -57,6 +57,7 @@ function tambahproduk($data){
 
     $nama_produk = $data["nama_produk"];
     $harga_produk = $data["harga_produk"];
+    $harga_produk_clean = str_replace(['Rp. ', '.'], '', $harga_produk);
     $ukuran_produk = $data["ukuran_produk"];
     $jenis_produk = $data["jenis_produk"];
     $kategori_produk = $data["kategori_produk"];
@@ -68,7 +69,7 @@ function tambahproduk($data){
         return false;
     }
 
-    $queryaddproduk = "INSERT INTO `produk` VALUES ('', '$foto_produk', '$nama_produk', '$harga_produk', '$ukuran_produk', '$jenis_produk', '$kategori_produk', '$stok_produk', '$desc_produk')";
+    $queryaddproduk = "INSERT INTO `produk` VALUES ('', '$foto_produk', '$nama_produk', '$harga_produk_clean', '$ukuran_produk', '$jenis_produk', '$kategori_produk', '$stok_produk', '$desc_produk')";
     mysqli_query($conn, $queryaddproduk);
 
     return mysqli_affected_rows($conn);
