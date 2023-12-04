@@ -66,7 +66,11 @@ if (!$result_select) {
                     <ul class="flex items-center space-x-4 ">
                         <li><img src="../../image/logo type b.png" width="20%" class="mr-80"></li>
                         <li><a href="../../index.php"
+<<<<<<< HEAD
                                 class="font-semibold text-black px-3 py-2">Home</a></li>
+=======
+                                class="font-semibold text-black border-b-2 border-black px-3 py-2">Home</a></li>
+>>>>>>> aa4b3fe6a53bc52a2cc392c69ebd46d2bd9f21ff
                         <li class="relative group">
                             <a href="men.php"
                                 class="font-semibold text-black px-3 py-2 rounded-md hover:bg-black hover:text-white transition-all duration-150 ease-in-out">Men</a>
@@ -201,6 +205,7 @@ if (!$result_select) {
                     <?php if(mysqli_num_rows($result_select)) : ?>
                     <?php while ($row = $result_select->fetch_assoc()) : ?>
                     <div
+<<<<<<< HEAD
                         class="group w-96 h-auto bg-white p-2 border rounded-lg hover:shadow-lg hover:bg-gray-600 hover:scale-105 transition-all duration-150 ease-in-out">
                         <div class="flex">
                             <img src="../homeADMIN/image/<?php echo $row['foto_produk']; ?>" alt="Produk"
@@ -208,6 +213,15 @@ if (!$result_select) {
                             <div>
                                 <h2
                                     class="text-2xl font-bold mb-8 mt-2 group-hover:text-white transition-all duration-150 ease-in-out">
+=======
+                        class="group w-96 h-auto p-4 bg-white border rounded-lg hover:shadow-lg hover:bg-gray-600 hover:scale-105 transition-all duration-150 ease-in-out">
+                        <div class="flex">
+                            <img src="../homeADMIN/image/<?php echo $row['foto_produk']; ?>" alt="Produk"
+                                class="w-32 h-32 mr-5 rounded-md">
+                            <div>
+                                <h2
+                                    class="text-2xl font-bold mb-8 group-hover:text-white transition-all duration-150 ease-in-out">
+>>>>>>> aa4b3fe6a53bc52a2cc392c69ebd46d2bd9f21ff
                                     <?php echo ucwords($row['nama_produk']); ?></h2>
                                 <p
                                     class="text-gray-600 mb-1 font-semibold text-sm group-hover:text-white transition-all duration-150 ease-in-out">

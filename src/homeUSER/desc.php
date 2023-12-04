@@ -19,7 +19,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../../font.css">
+<<<<<<< HEAD
     <link rel="icon" type="image/png" href="../../image/Icon/icon.png" />
+=======
+>>>>>>> aa4b3fe6a53bc52a2cc392c69ebd46d2bd9f21ff
     <title>Description Product</title>
 </head>
 <style>
@@ -37,14 +40,21 @@
 
 <body class="bg-gray-200">
     <div><?php include "navbar.php"; ?> </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> aa4b3fe6a53bc52a2cc392c69ebd46d2bd9f21ff
     <div class="bg-white flex gap-44 mt-32 mx-10 p-5 rounded-md">
         <div class="">
             <img src="../homeADMIN/image/<?php echo $data['foto_produk'] ?>" class="w-96 rounded-md"
                 alt="">
         </div>
         <div class=" w-2/3 h-auto -ml-20">
+<<<<<<< HEAD
             <p class="text-5xl font-semibold mb-16 mt-4"><?= ucwords($data['nama_produk'])?></p>
+=======
+            <p class="text-5xl font-semibold mb-16"><?= ucwords($data['nama_produk'])?></p>
+>>>>>>> aa4b3fe6a53bc52a2cc392c69ebd46d2bd9f21ff
             <p class=""><?php echo $data['nama_jenis']; ?> | <?php echo $data['nama_kategori']; ?></p>
             <p class="">Ukuran : <?= $data['ukuran_produk']; ?></p>
 
@@ -55,6 +65,10 @@
 
             
             $averageRating = $result['average_rating'];
+<<<<<<< HEAD
+=======
+
+>>>>>>> aa4b3fe6a53bc52a2cc392c69ebd46d2bd9f21ff
             
             echo '<p>Rating Produk : ';
             echo generateStarRating($averageRating); 
@@ -124,7 +138,11 @@
             function displayStarRating($rating)
             {
                 $rounded_rating = round($rating);
+<<<<<<< HEAD
                 $output = '<p> ';
+=======
+                $output = '<p>Rate : ';
+>>>>>>> aa4b3fe6a53bc52a2cc392c69ebd46d2bd9f21ff
                 for ($i = 1; $i <= 5; $i++) {
                     if ($i <= $rounded_rating) {
                         $output .= '<span class="gold-star">★</span>'; // Simbol bintang di sini (Anda juga bisa menggunakan gambar)

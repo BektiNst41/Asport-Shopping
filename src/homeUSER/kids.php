@@ -195,7 +195,11 @@
             ?>
                 <div
                     class="w-60 bg-white rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-150 ease-in-out  text-left p-4">
+<<<<<<< HEAD
                     <a href="desc.php?id_produk=<?= $data["id_produk"];?>">
+=======
+                    <a href="src/homeUSER/desc.php?id_produk=<?= $data["id_produk"];?>">
+>>>>>>> aa4b3fe6a53bc52a2cc392c69ebd46d2bd9f21ff
                         <img class="w-60 h-auto rounded-md" src="../homeADMIN/image/<?php echo $data['foto_produk'] ?>"
                             alt="" />
                     </a>

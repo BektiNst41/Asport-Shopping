@@ -18,7 +18,11 @@ $query_select = "SELECT uc.id_cart, uc.qty, uc.created_at, p.id_produk, p.foto_p
           INNER JOIN jenis jp ON p.id_jenis = jp.id_jenis
           INNER JOIN kategori kp ON p.id_kategori = kp.id_kategori
           WHERE uc.users_id = '$id_users'
+<<<<<<< HEAD
           AND (p.nama_produk LIKE '%$keyword%' OR p.ukuran_produk LIKE '%$keyword%' OR kp.nama_kategori LIKE '%$keyword%')
+=======
+          AND (p.nama_produk LIKE '%$keyword%' OR p.ukuran_produk LIKE '%$keyword%')
+>>>>>>> aa4b3fe6a53bc52a2cc392c69ebd46d2bd9f21ff
           ORDER BY p.id_produk DESC";
           
 $result_select = mysqli_query($conn, $query_select);
@@ -41,6 +45,7 @@ $result_select = mysqli_query($conn, $query_select);
         <?php if(mysqli_num_rows($result_select)) : ?>
         <?php while ($row = $result_select->fetch_assoc()) : ?>
         <div
+<<<<<<< HEAD
         class="group w-96 h-auto bg-white p-2 border rounded-lg hover:shadow-lg hover:bg-gray-600 hover:scale-105 transition-all duration-150 ease-in-out">
             <div class="flex">
                 <img src="../homeADMIN/image/<?php echo $row['foto_produk']; ?>" alt="Produk"
@@ -48,6 +53,15 @@ $result_select = mysqli_query($conn, $query_select);
                 <div>
                     <h2
                         class="text-2xl font-bold mb-8 mt-2 group-hover:text-white transition-all duration-150 ease-in-out">
+=======
+            class="group w-96 h-auto p-4 bg-white border rounded-lg hover:shadow-lg hover:bg-gray-600 hover:scale-105 transition-all duration-150 ease-in-out">
+            <div class="flex">
+                <img src="../homeADMIN/image/<?php echo $row['foto_produk']; ?>" alt="Produk"
+                    class="w-32 h-32 mr-5 rounded-md">
+                <div>
+                    <h2
+                        class="text-2xl font-bold mb-8 group-hover:text-white transition-all duration-150 ease-in-out">
+>>>>>>> aa4b3fe6a53bc52a2cc392c69ebd46d2bd9f21ff
                         <?php echo ucwords($row['nama_produk']); ?></h2>
                     <p
                         class="text-gray-600 mb-1 font-semibold text-sm group-hover:text-white transition-all duration-150 ease-in-out">
@@ -70,7 +84,11 @@ $result_select = mysqli_query($conn, $query_select);
         <?php endwhile; ?>
     </div>
     <?php else : ?>
+<<<<<<< HEAD
     <p>Produk Tidak Ada Dalam Keranjang.</p>
+=======
+    <p>Keranjang belanja Anda kosong.</p>
+>>>>>>> aa4b3fe6a53bc52a2cc392c69ebd46d2bd9f21ff
     <?php endif; ?>
             </div>
     </body>

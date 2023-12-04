@@ -81,9 +81,15 @@ $admin_name = $_SESSION['admin_name'];
                             require>
 
                         <label class="mt-2 text-sm font-semibold" id="harga_produk">Harga Produk</label>
+<<<<<<< HEAD
                         <input type="text" name="harga_produk" id="harga_produk" placeholder="Masukkan Harga produk..."
                             class="w-full border rounded px-3 py-2 text-sm focus:outline-none focus:border-black mt-1 mb-2"
                             required oninput="formatHargaProduk(this)">
+=======
+                        <input type="text" name="harga_produk" placeholder="Masukkan Harga produk..."
+                            class="w-full border rounded px-3 py-2 text-sm focus:outline-none focus:border-black mt-1 mb-2"
+                            require>
+>>>>>>> aa4b3fe6a53bc52a2cc392c69ebd46d2bd9f21ff
 
                         <label class="mt-2 text-sm font-semibold" id="ukuran_produk">Ukuran Produk</label><br>
                         <p class="mt-2 text-xs font-tint">Ukuran Dewasa</p>
@@ -236,6 +242,7 @@ $admin_name = $_SESSION['admin_name'];
         </div>
     <?php }; ?>
 </div>
+<<<<<<< HEAD
         
         <script>
         function formatHargaProduk(input) {
@@ -250,6 +257,10 @@ $admin_name = $_SESSION['admin_name'];
             return 'Rp. ' + formatted;
         }
         </script>
+=======
+
+
+>>>>>>> aa4b3fe6a53bc52a2cc392c69ebd46d2bd9f21ff
         <script>
         const modal = document.querySelector('.modal');
 
@@ -263,7 +274,11 @@ $admin_name = $_SESSION['admin_name'];
         closeModal.addEventListener('click', function() {
             modal.classList.add('hidden')
         });
+<<<<<<< HEAD
         </script> 
+=======
+        </script>
+>>>>>>> aa4b3fe6a53bc52a2cc392c69ebd46d2bd9f21ff
 </body>
 
 </html>
