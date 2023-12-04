@@ -178,7 +178,6 @@ require '../../koneksi.php';
         </div>
     </div>
         <!-- sidebar -->
-
     <div id="content_men">
         <div class="mt-36 ml-64 flex flex-wrap gap-5">
                 <?php
@@ -208,7 +207,7 @@ require '../../koneksi.php';
                 <div
                     class="w-60 bg-white rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-150 ease-in-out text-left p-4">
                     <a href="desc.php?id_produk=<?= $data["id_produk"];?>">
-                        <img class="w-60 h-auto rounded-md" src="../homeADMIN/image/<?php echo $data['foto_produk'] ?>"
+                        <img class="w-72 h-auto rounded-md" src="../homeADMIN/image/<?php echo $data['foto_produk'] ?>"
                             alt="" />
                     </a>
                     <div class="">
