@@ -81,16 +81,10 @@ $admin_name = $_SESSION['admin_name'];
                             require>
 
                         <label class="mt-2 text-sm font-semibold" id="harga_produk">Harga Produk</label>
-<<<<<<< HEAD
                         <input type="text" name="harga_produk" id="harga_produk" placeholder="Masukkan Harga produk..."
                             class="w-full border rounded px-3 py-2 text-sm focus:outline-none focus:border-black mt-1 mb-2"
                             required oninput="formatHargaProduk(this)">
-=======
-                        <input type="text" name="harga_produk" placeholder="Masukkan Harga produk..."
-                            class="w-full border rounded px-3 py-2 text-sm focus:outline-none focus:border-black mt-1 mb-2"
-                            require>
->>>>>>> aa4b3fe6a53bc52a2cc392c69ebd46d2bd9f21ff
-
+                        
                         <label class="mt-2 text-sm font-semibold" id="ukuran_produk">Ukuran Produk</label><br>
                         <p class="mt-2 text-xs font-tint">Ukuran Dewasa</p>
                         <input type="radio" id="38" name="ukuran_produk" value="38" require>
@@ -177,10 +171,10 @@ $admin_name = $_SESSION['admin_name'];
                             require></textarea>
 
                 </div class="ml-7">
-                <button
-                    class="bg-red-600 hover:bg-red-700 px-3 py-1 rounded text-white mr-3 float-right mb-4 close-modal">Batal</button>
-                <button class="bg-blue-600 hover:bg-blue-700 px-3 py-1 rounded text-white mr-1 float-right mb-4"
+                <button class="bg-blue-600 hover:bg-blue-700 px-3 py-1 rounded text-white mr-5 float-right mb-4"
                     name="tambahproduk">Tambah</button>
+                    <button
+                    class="bg-red-600 hover:bg-red-700 px-3 py-1 rounded text-white mr-3 float-right mb-4 close-modal">Batal</button>
                 </form>
             </div>
         </div>
@@ -242,8 +236,6 @@ $admin_name = $_SESSION['admin_name'];
         </div>
     <?php }; ?>
 </div>
-<<<<<<< HEAD
-        
         <script>
         function formatHargaProduk(input) {
             let HargaProduk = input.value.replace(/\D/g, ''); // Menghapus semua kecuali digit
@@ -257,10 +249,7 @@ $admin_name = $_SESSION['admin_name'];
             return 'Rp. ' + formatted;
         }
         </script>
-=======
 
-
->>>>>>> aa4b3fe6a53bc52a2cc392c69ebd46d2bd9f21ff
         <script>
         const modal = document.querySelector('.modal');
 
@@ -274,11 +263,8 @@ $admin_name = $_SESSION['admin_name'];
         closeModal.addEventListener('click', function() {
             modal.classList.add('hidden')
         });
-<<<<<<< HEAD
         </script> 
-=======
-        </script>
->>>>>>> aa4b3fe6a53bc52a2cc392c69ebd46d2bd9f21ff
+
 </body>
 
 </html>

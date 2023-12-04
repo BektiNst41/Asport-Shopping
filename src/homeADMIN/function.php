@@ -57,10 +57,7 @@ function tambahproduk($data){
 
     $nama_produk = $data["nama_produk"];
     $harga_produk = $data["harga_produk"];
-<<<<<<< HEAD
     $harga_produk_clean = str_replace(['Rp. ', '.'], '', $harga_produk);
-=======
->>>>>>> aa4b3fe6a53bc52a2cc392c69ebd46d2bd9f21ff
     $ukuran_produk = $data["ukuran_produk"];
     $jenis_produk = $data["jenis_produk"];
     $kategori_produk = $data["kategori_produk"];
@@ -72,11 +69,7 @@ function tambahproduk($data){
         return false;
     }
 
-<<<<<<< HEAD
     $queryaddproduk = "INSERT INTO `produk` VALUES ('', '$foto_produk', '$nama_produk', '$harga_produk_clean', '$ukuran_produk', '$jenis_produk', '$kategori_produk', '$stok_produk', '$desc_produk')";
-=======
-    $queryaddproduk = "INSERT INTO `produk` VALUES ('', '$foto_produk', '$nama_produk', '$harga_produk', '$ukuran_produk', '$jenis_produk', '$kategori_produk', '$stok_produk', '$desc_produk')";
->>>>>>> aa4b3fe6a53bc52a2cc392c69ebd46d2bd9f21ff
     mysqli_query($conn, $queryaddproduk);
 
     return mysqli_affected_rows($conn);
@@ -134,6 +127,7 @@ function tambahproduk($data){
         $fotoLama = htmlspecialchars($data["fotoLama"]);
         $nama_produk = htmlspecialchars($data["nama_produk"]);
         $harga_produk = htmlspecialchars($data["harga_produk"]);
+        $harga_produk_clean = str_replace(['Rp. ', '.'], '', $harga_produk);
         $ukuran_produk = htmlspecialchars($data["ukuran_produk"]);
         $jenis_produk = htmlspecialchars($data["jenis_produk"]);
         $kategori_produk = htmlspecialchars($data["kategori_produk"]);
@@ -159,7 +153,7 @@ function tambahproduk($data){
         $query = "UPDATE produk SET
                   foto_produk = '$foto_produk',
                   nama_produk = '$nama_produk',
-                  harga_produk = '$harga_produk',
+                  harga_produk = '$harga_produk_clean',
                   ukuran_produk = '$ukuran_produk',
                   id_jenis = '$jenis_produk',
                   id_kategori = '$kategori_produk',

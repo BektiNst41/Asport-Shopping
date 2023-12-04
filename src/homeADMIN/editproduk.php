@@ -87,8 +87,9 @@
             class="w-full border rounded px-3 py-2 text-sm focus:outline-none focus:border-black mt-1 mb-2">
 
             <label class="mt-2 text-sm font-semibold" id="harga_produk">Harga Produk</label>
-            <input type="text" id="name" name="harga_produk" value="<?= $produk["harga_produk"]; ?>"
-            class="w-full border rounded px-3 py-2 text-sm focus:outline-none focus:border-black mt-1 mb-2">
+            <input type="text" name="harga_produk" id="harga_produk" placeholder="Masukkan Harga produk..." value="<?= $produk["harga_produk"]?>"
+            class="w-full border rounded px-3 py-2 text-sm focus:outline-none focus:border-black mt-1 mb-2"
+            required oninput="formatHargaProduk(this)">
 
             <label class="mt-2 text-sm font-semibold" id="ukuran_produk">Ukuran Produk</label><br>
             <p class="mt-2 text-xs font-tint">Ukuran Dewasa</p>
@@ -203,6 +204,20 @@
     </div>
     </form>
     </div>
+
+    <script>
+        function formatHargaProduk(input) {
+            let HargaProduk = input.value.replace(/\D/g, ''); // Menghapus semua kecuali digit
+            HargaProduk = formatRupiah(HargaProduk); // Memformat nilai menjadi format Rupiah
+            input.value = HargaProduk;
+            input.setAttribute('data-value', HargaProduk.replace(/[^0-9]/g, '')); // Menyimpan nilai tanpa tanda baca
+        }
+
+        function formatRupiah(angka) {
+            let formatted = angka.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+            return 'Rp. ' + formatted;
+        }
+        </script>
 </body>
 
 </html>

@@ -18,11 +18,7 @@ if ($result && mysqli_num_rows($result) > 0) {
             <ul class="flex items-center space-x-4 ">
                 <li><img src="../../image/logo type b.png" width="20%" class="mr-80"></li>
                 <li><a href="../../index.php"
-<<<<<<< HEAD
-                        class="font-semibold text-blac px-3 py-2">Home</a></li>
-=======
-                        class="font-semibold text-black border-b-2 border-black px-3 py-2">Home</a></li>
->>>>>>> aa4b3fe6a53bc52a2cc392c69ebd46d2bd9f21ff
+                        class="font-semibold text-black  px-3 py-2">Home</a></li>
                 <li class="relative group">
                     <a href="men.php"
                         class="font-semibold text-black px-3 py-2 rounded-md hover:bg-black hover:text-white active:bg-blue-500 transition-all duration-150 ease-in-out">Men</a>
@@ -90,11 +86,7 @@ if ($result && mysqli_num_rows($result) > 0) {
                             <span class="sr-only">Search icon</span>
                         </div>
                         <input type="text" id="search-navbar"
-<<<<<<< HEAD
-                        class="block w-full p-2 pl-10 mr-44 text-sm mt-1 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 "
-=======
                             class="block w-full p-2 pl-10 mr-32 text-sm mt-1 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 "
->>>>>>> aa4b3fe6a53bc52a2cc392c69ebd46d2bd9f21ff
                             placeholder="Search...">
                     </div>
                 </div>
