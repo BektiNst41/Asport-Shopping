@@ -81,9 +81,9 @@ $admin_name = $_SESSION['admin_name'];
                             require>
 
                         <label class="mt-2 text-sm font-semibold" id="harga_produk">Harga Produk</label>
-                        <input type="text" name="harga_produk" placeholder="Masukkan Harga produk..."
+                        <input type="text" name="harga_produk" id="harga_produk" placeholder="Masukkan Harga produk..."
                             class="w-full border rounded px-3 py-2 text-sm focus:outline-none focus:border-black mt-1 mb-2"
-                            require>
+                            required oninput="formatHargaProduk(this)">
 
                         <label class="mt-2 text-sm font-semibold" id="ukuran_produk">Ukuran Produk</label><br>
                         <p class="mt-2 text-xs font-tint">Ukuran Dewasa</p>
@@ -236,8 +236,6 @@ $admin_name = $_SESSION['admin_name'];
         </div>
     <?php }; ?>
 </div>
-
-
         <script>
         const modal = document.querySelector('.modal');
 
@@ -251,7 +249,7 @@ $admin_name = $_SESSION['admin_name'];
         closeModal.addEventListener('click', function() {
             modal.classList.add('hidden')
         });
-        </script>
+        </script> 
 </body>
 
 </html>

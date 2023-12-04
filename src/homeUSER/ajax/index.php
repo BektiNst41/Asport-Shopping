@@ -23,7 +23,7 @@ require '../../../koneksi.php';
         $query = "SELECT produk.*, jenis.nama_jenis, kategori.nama_kategori FROM produk
           INNER JOIN jenis ON produk.id_jenis = jenis.id_jenis
           INNER JOIN kategori ON produk.id_kategori = kategori.id_kategori
-          WHERE produk.nama_produk LIKE '%$keyword%' OR produk.ukuran_produk LIKE '%$keyword%'
+          WHERE produk.nama_produk LIKE '%$keyword%' OR produk.ukuran_produk LIKE '%$keyword%' OR kategori.nama_kategori LIKE '%$keyword%'
           ORDER BY produk.id_produk DESC";
 
         $result = mysqli_query($conn, $query);
