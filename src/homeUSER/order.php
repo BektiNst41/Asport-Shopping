@@ -229,11 +229,8 @@ if (mysqli_query($conn, $delete_query)) {
                     </div>
 
                     <div
-<<<<<<< HEAD
-                        class="px-5 rounded-md text-white flex items-center justify-end  right-0 <?php echo ($row['id_status'] == 1) ? 'bg-yellow-500' : (($row['id_status'] == 2) ? 'bg-green-500' : (($row['id_status'] == 3) ? 'bg-red-500' : '')); ?>">
-=======
                         class="px-5 rounded-md text-white flex items-center justify-end  right-0 <?php echo ($row['id_status'] == 1) ? 'bg-red-500' : (($row['id_status'] == 2) ? 'bg-green-500' : ''); ?>">
->>>>>>> aa4b3fe6a53bc52a2cc392c69ebd46d2bd9f21ff
+
                         <p class="font-semibold"><?= $row['nama_status']; ?></p>
                     </div>
 
@@ -246,11 +243,8 @@ if (mysqli_query($conn, $delete_query)) {
                         $userId = $_SESSION['id_users']; // Ganti dengan variabel session pengguna yang sesuai
                         $productId = $row['id_produk']; // Ganti dengan variabel ID produk yang sesuai
 
-<<<<<<< HEAD
-                        $query = $pdo->prepare("SELECT * FROM user_rating WHERE users_id = $id_users");
-=======
                         $query = $pdo->prepare("SELECT * FROM user_rating WHERE users_id = ? AND id_produk = ?");
->>>>>>> aa4b3fe6a53bc52a2cc392c69ebd46d2bd9f21ff
+
                         $query->execute([$userId, $productId]);
 
                         $userHasRated = $query->rowCount() > 0; // Jika terdapat baris data, artinya pengguna sudah memberikan rating

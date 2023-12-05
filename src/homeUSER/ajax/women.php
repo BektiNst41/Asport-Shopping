@@ -16,18 +16,14 @@ require '../../../koneksi.php';
 </head>
 
 <body class="bg-gray-200">
-        <div class="mt-32 ml-72 flex flex-wrap gap-5">
+<div class="mt-36 ml-64 flex flex-wrap gap-5">
         <?php
 
         $keyword = $_GET["keyword"];
         $query = "SELECT produk.*, jenis.nama_jenis, kategori.nama_kategori FROM produk
           INNER JOIN jenis ON produk.id_jenis = jenis.id_jenis
           INNER JOIN kategori ON produk.id_kategori = kategori.id_kategori
-<<<<<<< HEAD
-          WHERE jenis.nama_jenis = 'women' AND (produk.nama_produk LIKE '%$keyword%' OR produk.ukuran_produk LIKE '%$keyword%' OR kategori.nama_kategori LIKE '%$keyword%')
-=======
           WHERE jenis.nama_jenis = 'women' AND (produk.nama_produk LIKE '%$keyword%' OR produk.ukuran_produk LIKE '%$keyword%')
->>>>>>> aa4b3fe6a53bc52a2cc392c69ebd46d2bd9f21ff
           ORDER BY produk.id_produk DESC";
 
         $result = mysqli_query($conn, $query);

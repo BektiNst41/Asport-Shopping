@@ -167,7 +167,7 @@
 <!-- sidebar -->
 
     <div id="content">
-    <div class="mt-36 ml-72 flex flex-wrap gap-5">
+    <div class="mt-36 ml-64 flex flex-wrap gap-5">
     <?php
         if (isset($_GET['kategori_id'])) {
             $kategori_id = $_GET['kategori_id'];
